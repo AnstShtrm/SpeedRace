@@ -37,6 +37,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6077805B2A6EC691001BF805 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				60D135862A6EA16B00F07501 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6077805C2A6EC6DD001BF805 /* Resurces */ = {
+			isa = PBXGroup;
+			children = (
+				60D135822A6EA16B00F07501 /* AppDelegate.swift */,
+				60D135842A6EA16B00F07501 /* SceneDelegate.swift */,
+				60D135882A6EA16B00F07501 /* Main.storyboard */,
+				60D1358D2A6EA16D00F07501 /* LaunchScreen.storyboard */,
+				60D1358B2A6EA16D00F07501 /* Assets.xcassets */,
+				60D135902A6EA16D00F07501 /* Info.plist */,
+			);
+			path = Resurces;
+			sourceTree = "<group>";
+		};
 		60D135762A6EA16B00F07501 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +77,8 @@
 		60D135812A6EA16B00F07501 /* SpeedRaceApp */ = {
 			isa = PBXGroup;
 			children = (
-				60D135822A6EA16B00F07501 /* AppDelegate.swift */,
-				60D135842A6EA16B00F07501 /* SceneDelegate.swift */,
-				60D135862A6EA16B00F07501 /* ViewController.swift */,
-				60D135882A6EA16B00F07501 /* Main.storyboard */,
-				60D1358B2A6EA16D00F07501 /* Assets.xcassets */,
-				60D1358D2A6EA16D00F07501 /* LaunchScreen.storyboard */,
-				60D135902A6EA16D00F07501 /* Info.plist */,
+				6077805C2A6EC6DD001BF805 /* Resurces */,
+				6077805B2A6EC691001BF805 /* Controllers */,
 			);
 			path = SpeedRaceApp;
 			sourceTree = "<group>";
@@ -288,7 +304,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpeedRaceApp/Info.plist;
+				INFOPLIST_FILE = SpeedRaceApp/Resurces/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Speed Race";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,7 +332,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpeedRaceApp/Info.plist;
+				INFOPLIST_FILE = SpeedRaceApp/Resurces/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Speed Race";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
