@@ -13,15 +13,13 @@ class SwitchForSettingCell: UITableViewCell {
     
     @IBOutlet weak var switchForSetting: UISwitch!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
+    weak var delegate: SettingDelegate?
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-    
     @IBAction func switchChange (_ sender: Any){
+    delegate?.cell(self, changeValueTo: switchForSetting.isOn)
     }
-    
+}
+
+protocol SettingDelegate: AnyObject {
+    func cell (_ cell: SwitchForSettingCell, changeValueTo isOn: Bool)
 }

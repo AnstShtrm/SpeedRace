@@ -9,4 +9,11 @@ import Foundation
 
 struct TypesForSetting {
     var nameOfSetting: String
+    var switcher: Any?
+    var type: TypeOfCell
+}
+
+enum TypeOfCell {
+    case openSetting
+    case switchSetting
 }

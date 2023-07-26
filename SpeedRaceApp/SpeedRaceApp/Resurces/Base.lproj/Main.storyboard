@@ -32,9 +32,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="gX3-JK-Fwj">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OVV-px-bP6">
                                 <rect key="frame" x="140" y="641.66666666666663" width="113" height="50"/>
                                 <state key="normal" title="Button"/>
@@ -59,15 +56,18 @@
                                     <segue destination="ag6-aN-QHw" kind="show" id="JEF-rz-Nkb"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="gX3-JK-Fwj">
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3Za-m4-yrE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="gX3-JK-Fwj" firstAttribute="bottom" secondItem="3Za-m4-yrE" secondAttribute="bottom" id="5IQ-XX-vDk"/>
                             <constraint firstItem="gX3-JK-Fwj" firstAttribute="top" secondItem="3Za-m4-yrE" secondAttribute="top" id="5lk-E5-F8v"/>
                             <constraint firstItem="IXh-tT-BoZ" firstAttribute="firstBaseline" secondItem="OVV-px-bP6" secondAttribute="baseline" constant="120" id="AY6-fy-ALp"/>
                             <constraint firstItem="IXh-tT-BoZ" firstAttribute="centerX" secondItem="jtz-VJ-vz2" secondAttribute="centerX" id="SSu-vW-Pgf"/>
                             <constraint firstItem="3Za-m4-yrE" firstAttribute="trailing" secondItem="gX3-JK-Fwj" secondAttribute="trailing" id="TSh-hJ-F2c"/>
-                            <constraint firstItem="3Za-m4-yrE" firstAttribute="bottom" secondItem="gX3-JK-Fwj" secondAttribute="bottom" id="ZEj-Zi-nV9"/>
                             <constraint firstItem="3Za-m4-yrE" firstAttribute="bottom" secondItem="IXh-tT-BoZ" secondAttribute="bottom" constant="8" id="bXT-zJ-OFl"/>
                             <constraint firstItem="OVV-px-bP6" firstAttribute="centerX" secondItem="jtz-VJ-vz2" secondAttribute="centerX" id="hyO-KV-qzM"/>
                             <constraint firstItem="gX3-JK-Fwj" firstAttribute="leading" secondItem="3Za-m4-yrE" secondAttribute="leading" id="iLk-QM-KFA"/>
@@ -106,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EQA-eR-EYT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="931" y="-671"/>
+            <point key="canvasLocation" x="930.53435114503816" y="-671.12676056338034"/>
         </scene>
         <!--Game-->
         <scene sceneID="Nkf-TG-aLe">
@@ -198,6 +198,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="PJv-L5-ZOw"/>
+                    <connections>
+                        <outlet property="TableView" destination="nzv-Bf-ChK" id="YLn-LR-bDA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UXg-0f-inv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
