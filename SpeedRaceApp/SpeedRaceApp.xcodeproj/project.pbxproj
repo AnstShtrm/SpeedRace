@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		607780612A716421001BF805 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6077805F2A716421001BF805 /* SettingTableViewCell.swift */; };
+		607780622A716421001BF805 /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607780602A716421001BF805 /* SettingTableViewCell.xib */; };
+		607780642A716886001BF805 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607780632A716886001BF805 /* SettingViewController.swift */; };
+		607780662A71693D001BF805 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607780652A71693D001BF805 /* SettingsModel.swift */; };
+		6077806A2A716B4D001BF805 /* SwitchForSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607780682A716B4D001BF805 /* SwitchForSettingCell.swift */; };
+		6077806B2A716B4D001BF805 /* SwitchForSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607780692A716B4D001BF805 /* SwitchForSettingCell.xib */; };
 		60D135832A6EA16B00F07501 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D135822A6EA16B00F07501 /* AppDelegate.swift */; };
 		60D135852A6EA16B00F07501 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D135842A6EA16B00F07501 /* SceneDelegate.swift */; };
 		60D135872A6EA16B00F07501 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D135862A6EA16B00F07501 /* ViewController.swift */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6077805F2A716421001BF805 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		607780602A716421001BF805 /* SettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
+		607780632A716886001BF805 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		607780652A71693D001BF805 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		607780682A716B4D001BF805 /* SwitchForSettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchForSettingCell.swift; sourceTree = "<group>"; };
+		607780692A716B4D001BF805 /* SwitchForSettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchForSettingCell.xib; sourceTree = "<group>"; };
 		60D1357F2A6EA16B00F07501 /* SpeedRaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedRaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D135822A6EA16B00F07501 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60D135842A6EA16B00F07501 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				60D135862A6EA16B00F07501 /* ViewController.swift */,
+				607780632A716886001BF805 /* SettingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -56,6 +69,34 @@
 				60D135902A6EA16D00F07501 /* Info.plist */,
 			);
 			path = Resurces;
+			sourceTree = "<group>";
+		};
+		6077805D2A716396001BF805 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				607780672A716AF2001BF805 /* Switch Settings Cell */,
+				6077805E2A7163A5001BF805 /* Open Settings Cell */,
+				607780652A71693D001BF805 /* SettingsModel.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		6077805E2A7163A5001BF805 /* Open Settings Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6077805F2A716421001BF805 /* SettingTableViewCell.swift */,
+				607780602A716421001BF805 /* SettingTableViewCell.xib */,
+			);
+			path = "Open Settings Cell";
+			sourceTree = "<group>";
+		};
+		607780672A716AF2001BF805 /* Switch Settings Cell */ = {
+			isa = PBXGroup;
+			children = (
+				607780682A716B4D001BF805 /* SwitchForSettingCell.swift */,
+				607780692A716B4D001BF805 /* SwitchForSettingCell.xib */,
+			);
+			path = "Switch Settings Cell";
 			sourceTree = "<group>";
 		};
 		60D135762A6EA16B00F07501 = {
@@ -77,8 +118,9 @@
 		60D135812A6EA16B00F07501 /* SpeedRaceApp */ = {
 			isa = PBXGroup;
 			children = (
-				6077805C2A6EC6DD001BF805 /* Resurces */,
 				6077805B2A6EC691001BF805 /* Controllers */,
+				6077805D2A716396001BF805 /* Cells */,
+				6077805C2A6EC6DD001BF805 /* Resurces */,
 			);
 			path = SpeedRaceApp;
 			sourceTree = "<group>";
@@ -143,7 +185,9 @@
 			files = (
 				60D1358F2A6EA16D00F07501 /* LaunchScreen.storyboard in Resources */,
 				60D1358C2A6EA16D00F07501 /* Assets.xcassets in Resources */,
+				607780622A716421001BF805 /* SettingTableViewCell.xib in Resources */,
 				60D1358A2A6EA16B00F07501 /* Main.storyboard in Resources */,
+				6077806B2A716B4D001BF805 /* SwitchForSettingCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,8 +198,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6077806A2A716B4D001BF805 /* SwitchForSettingCell.swift in Sources */,
+				607780662A71693D001BF805 /* SettingsModel.swift in Sources */,
+				607780642A716886001BF805 /* SettingViewController.swift in Sources */,
 				60D135872A6EA16B00F07501 /* ViewController.swift in Sources */,
 				60D135832A6EA16B00F07501 /* AppDelegate.swift in Sources */,
+				607780612A716421001BF805 /* SettingTableViewCell.swift in Sources */,
 				60D135852A6EA16B00F07501 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

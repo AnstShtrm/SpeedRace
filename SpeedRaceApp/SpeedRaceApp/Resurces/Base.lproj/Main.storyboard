@@ -142,7 +142,7 @@
         <!--Settings-->
         <scene sceneID="AQI-Xk-HC1">
             <objects>
-                <viewController id="XvN-i3-QGr" sceneMemberID="viewController">
+                <viewController id="XvN-i3-QGr" customClass="SettingViewController" customModule="SpeedRaceApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o7b-Nx-Pog">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,7 +151,7 @@
                                 <rect key="frame" x="0.0" y="744" width="393" height="74"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="cancel" translatesAutoresizingMaskIntoConstraints="NO" id="TUl-ec-kDB">
-                                        <rect key="frame" x="16" y="16" width="185.33333333333334" height="42"/>
+                                        <rect key="frame" x="16" y="16" width="164.66666666666666" height="42"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Cancel">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="23"/>
@@ -159,7 +159,7 @@
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="jYH-B9-9wA">
-                                        <rect key="frame" x="233.33333333333337" y="16" width="143.66666666666663" height="42"/>
+                                        <rect key="frame" x="212.66666666666663" y="16" width="164.33333333333337" height="42"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="tinted" title="Save">
                                             <backgroundConfiguration key="background"/>
@@ -169,7 +169,7 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="TUl-ec-kDB" firstAttribute="width" secondItem="jYH-B9-9wA" secondAttribute="width" multiplier="1.28767" id="2he-rZ-BvW"/>
+                                    <constraint firstItem="TUl-ec-kDB" firstAttribute="width" secondItem="jYH-B9-9wA" secondAttribute="width" id="2he-rZ-BvW"/>
                                     <constraint firstAttribute="bottom" secondItem="TUl-ec-kDB" secondAttribute="bottom" constant="16" id="C0Q-oY-DjR"/>
                                     <constraint firstItem="TUl-ec-kDB" firstAttribute="top" secondItem="EbY-qn-b2n" secondAttribute="top" constant="16" id="JO1-00-TRg"/>
                                     <constraint firstItem="jYH-B9-9wA" firstAttribute="leading" secondItem="TUl-ec-kDB" secondAttribute="trailing" constant="32" id="UAE-Fv-E5M"/>
@@ -181,7 +181,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nzv-Bf-ChK">
-                                <rect key="frame" x="0.0" y="103" width="393" height="645"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="641"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -191,9 +191,9 @@
                             <constraint firstItem="Bda-hF-Pvl" firstAttribute="bottom" secondItem="EbY-qn-b2n" secondAttribute="bottom" id="1hN-T8-w3I"/>
                             <constraint firstItem="nzv-Bf-ChK" firstAttribute="leading" secondItem="Bda-hF-Pvl" secondAttribute="leading" id="Zjs-se-l4i"/>
                             <constraint firstItem="Bda-hF-Pvl" firstAttribute="trailing" secondItem="nzv-Bf-ChK" secondAttribute="trailing" id="bP0-Uc-lc7"/>
-                            <constraint firstItem="Bda-hF-Pvl" firstAttribute="bottom" secondItem="nzv-Bf-ChK" secondAttribute="bottom" constant="70" id="dD7-cw-Ibg"/>
                             <constraint firstItem="Bda-hF-Pvl" firstAttribute="trailing" secondItem="EbY-qn-b2n" secondAttribute="trailing" id="e69-En-IS6"/>
                             <constraint firstItem="nzv-Bf-ChK" firstAttribute="top" secondItem="Bda-hF-Pvl" secondAttribute="top" id="o3E-92-Gle"/>
+                            <constraint firstItem="EbY-qn-b2n" firstAttribute="top" secondItem="nzv-Bf-ChK" secondAttribute="bottom" id="o9F-sG-QOE"/>
                             <constraint firstItem="EbY-qn-b2n" firstAttribute="leading" secondItem="Bda-hF-Pvl" secondAttribute="leading" id="sKy-QQ-PzD"/>
                         </constraints>
                     </view>
