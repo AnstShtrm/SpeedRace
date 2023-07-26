@@ -75,28 +75,32 @@
                     </view>
                     <navigationItem key="navigationItem" title="Speed Race" id="nhA-l6-G0z">
                         <barButtonItem key="leftBarButtonItem" image="line.3.horizontal.decrease" catalog="system" style="plain" id="K3n-of-MsH">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="SJ0-kW-zNM">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="SJ0-kW-zNM">
                                 <rect key="frame" x="16" y="5" width="87" height="34.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="line.3.horizontal.decrease" catalog="system">
+                                    <color key="baseForegroundColor" systemColor="placeholderTextColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="03T-Ey-hbF" kind="showDetail" id="YDu-ki-nvK"/>
+                                </connections>
                             </button>
                             <color key="tintColor" systemColor="placeholderTextColor"/>
-                            <connections>
-                                <segue destination="03T-Ey-hbF" kind="showDetail" id="0PK-Yq-1e7"/>
-                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="gearshape" catalog="system" style="plain" id="mPM-gO-kEy">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="OqJ-1C-ZVm">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="OqJ-1C-ZVm">
                                 <rect key="frame" x="290" y="5" width="87" height="34.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="gearshape" catalog="system">
+                                    <color key="baseForegroundColor" systemColor="placeholderTextColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="XvN-i3-QGr" kind="show" id="hw7-A6-t2h"/>
+                                </connections>
                             </button>
                             <color key="tintColor" systemColor="placeholderTextColor"/>
-                            <connections>
-                                <segue destination="XvN-i3-QGr" kind="show" id="YRT-pj-o4l"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
