@@ -27,7 +27,7 @@
         <!--Speed Race-->
         <scene sceneID="esZ-Vq-zOb">
             <objects>
-                <viewController id="fFN-l0-5Ye" sceneMemberID="viewController">
+                <viewController id="fFN-l0-5Ye" customClass="MainViewController" customModule="SpeedRaceApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jtz-VJ-vz2">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,7 +44,7 @@
                                     <color key="baseBackgroundColor" systemColor="tertiaryLabelColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="cVK-0k-MN3" kind="show" id="04O-k2-Ywm"/>
+                                    <action selector="startSpeedRace:" destination="fFN-l0-5Ye" eventType="touchUpInside" id="czO-b1-UhR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXh-tT-BoZ">
@@ -107,22 +107,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EQA-eR-EYT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="930.53435114503816" y="-671.12676056338034"/>
-        </scene>
-        <!--Game-->
-        <scene sceneID="Nkf-TG-aLe">
-            <objects>
-                <viewController id="cVK-0k-MN3" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="oV5-b9-Taq">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="blR-Rb-C6O"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Game" id="BLD-Z8-Y8R"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YAT-cK-PAw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1720" y="-671"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kaj-3x-WRe">

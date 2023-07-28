@@ -10,8 +10,6 @@ import UIKit
 class SettingTableViewCell: UITableViewCell {
     @IBOutlet weak var nameOfSetting: UILabel!
     
-    
-    
     func setupValues (nameForSetting: String) {
         nameOfSetting.text = nameForSetting
     }
