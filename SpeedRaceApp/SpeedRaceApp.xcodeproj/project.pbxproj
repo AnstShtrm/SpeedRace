@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		602C98582A7BDF6300AD8359 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 602C98572A7BDF6300AD8359 /* Lottie */; };
 		602C985A2A7BDFDA00AD8359 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602C98592A7BDFDA00AD8359 /* SideMenuViewController.swift */; };
-		602C985C2A7BE07400AD8359 /* carAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 602C985B2A7BE07400AD8359 /* carAnimation.json */; };
+		602C985E2A7C4EFB00AD8359 /* carAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 602C985D2A7C4EFB00AD8359 /* carAnimation.json */; };
 		607780612A716421001BF805 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6077805F2A716421001BF805 /* SettingTableViewCell.swift */; };
 		607780622A716421001BF805 /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607780602A716421001BF805 /* SettingTableViewCell.xib */; };
 		607780642A716886001BF805 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607780632A716886001BF805 /* SettingViewController.swift */; };
@@ -32,7 +32,7 @@
 
 /* Begin PBXFileReference section */
 		602C98592A7BDFDA00AD8359 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
-		602C985B2A7BE07400AD8359 /* carAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = carAnimation.json; path = ../../../../Downloads/carAnimation.json; sourceTree = "<group>"; };
+		602C985D2A7C4EFB00AD8359 /* carAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = carAnimation.json; path = ../../../carAnimation.json; sourceTree = "<group>"; };
 		6077805F2A716421001BF805 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		607780602A716421001BF805 /* SettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
 		607780632A716886001BF805 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 		6077805C2A6EC6DD001BF805 /* Resurces */ = {
 			isa = PBXGroup;
 			children = (
-				602C985B2A7BE07400AD8359 /* carAnimation.json */,
+				602C985D2A7C4EFB00AD8359 /* carAnimation.json */,
 				60D135822A6EA16B00F07501 /* AppDelegate.swift */,
 				60D135842A6EA16B00F07501 /* SceneDelegate.swift */,
 				60D135882A6EA16B00F07501 /* Main.storyboard */,
@@ -246,7 +246,7 @@
 				60D1358A2A6EA16B00F07501 /* Main.storyboard in Resources */,
 				6077806B2A716B4D001BF805 /* SwitchForSettingCell.xib in Resources */,
 				607780742A71CA41001BF805 /* StatsCell.xib in Resources */,
-				602C985C2A7BE07400AD8359 /* carAnimation.json in Resources */,
+				602C985E2A7C4EFB00AD8359 /* carAnimation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
