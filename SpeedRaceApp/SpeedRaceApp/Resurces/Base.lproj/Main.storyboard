@@ -108,16 +108,31 @@
             </objects>
             <point key="canvasLocation" x="930.53435114503816" y="-671.12676056338034"/>
         </scene>
-        <!--View Controller-->
+        <!--Side Menu View Controller-->
         <scene sceneID="kaj-3x-WRe">
             <objects>
-                <viewController id="03T-Ey-hbF" sceneMemberID="viewController">
+                <viewController id="03T-Ey-hbF" customClass="SideMenuViewController" customModule="SpeedRaceApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O1p-qM-bCg">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gCZ-YG-uLc">
+                                <rect key="frame" x="16" y="16" width="361" height="810"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="CcL-gD-lQl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gCZ-YG-uLc" firstAttribute="leading" secondItem="CcL-gD-lQl" secondAttribute="leading" constant="16" id="1mz-ZU-kP3"/>
+                            <constraint firstItem="gCZ-YG-uLc" firstAttribute="top" secondItem="CcL-gD-lQl" secondAttribute="top" constant="16" id="8tF-PN-IS1"/>
+                            <constraint firstItem="CcL-gD-lQl" firstAttribute="trailing" secondItem="gCZ-YG-uLc" secondAttribute="trailing" constant="16" id="DJT-9f-zcn"/>
+                            <constraint firstItem="CcL-gD-lQl" firstAttribute="bottom" secondItem="gCZ-YG-uLc" secondAttribute="bottom" constant="16" id="fgO-kc-euI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="animationView" destination="gCZ-YG-uLc" id="9IQ-3V-nKt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H08-8W-DDv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

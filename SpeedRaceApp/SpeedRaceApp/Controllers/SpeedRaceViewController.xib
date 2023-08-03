@@ -10,7 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SpeedRaceViewController" customModule="SpeedRaceApp" customModuleProvider="target">
             <connections>
-                <outlet property="carPositionSegmentControl" destination="kbP-7f-UrH" id="1dq-ZL-uEu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,25 +17,8 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kbP-7f-UrH">
-                    <rect key="frame" x="105.66666666666669" y="552.66666666666663" width="182" height="32"/>
-                    <segments>
-                        <segment title="Left"/>
-                        <segment title="Center"/>
-                        <segment title="Right"/>
-                    </segments>
-                    <connections>
-                        <action selector="changeCarPosition:" destination="-1" eventType="valueChanged" id="RuC-Tb-cmw"/>
-                    </connections>
-                </segmentedControl>
-            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <constraints>
-                <constraint firstItem="kbP-7f-UrH" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="4/3" id="gWN-rZ-aFi"/>
-                <constraint firstItem="kbP-7f-UrH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wZ7-t8-6lp"/>
-            </constraints>
             <point key="canvasLocation" x="58" y="21"/>
         </view>
     </objects>
