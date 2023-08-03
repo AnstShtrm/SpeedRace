@@ -87,26 +87,33 @@ class SpeedRaceViewController: UIViewController {
     }
     
     func swipeLeft () {
-        if carImage.frame.origin.x == rightOriginCoordinate {
-            carImage.frame.origin.x = centerOriginCoordinate
-        }
-        else if carImage.frame.origin.x == centerOriginCoordinate {
-            carImage.frame.origin.x = leftOriginCoordinate
-        }
-        else {
-            return
+        
+        UIView.animate(withDuration: 0.4) { [weak self] in
+            if self?.carImage.frame.origin.x == self?.rightOriginCoordinate {
+                self?.carImage.frame.origin.x = self!.centerOriginCoordinate
+            }
+            else if self?.carImage.frame.origin.x == self?.centerOriginCoordinate {
+                self?.carImage.frame.origin.x = self!.leftOriginCoordinate
+            }
+            else {
+                return
+            }
         }
     }
     
     func swipeRight () {
-        if carImage.frame.origin.x == leftOriginCoordinate {
-            carImage.frame.origin.x = centerOriginCoordinate
-        }
-        else if carImage.frame.origin.x == centerOriginCoordinate {
-            carImage.frame.origin.x = rightOriginCoordinate
-        }
-        else {
-            return
+        
+        UIView.animate(withDuration: 0.4) { [weak self] in
+            
+            if self?.carImage.frame.origin.x == self?.leftOriginCoordinate {
+                self?.carImage.frame.origin.x = self!.centerOriginCoordinate
+            }
+            else if self?.carImage.frame.origin.x == self?.centerOriginCoordinate {
+                self?.carImage.frame.origin.x = self!.rightOriginCoordinate
+            }
+            else {
+                return
+            }
         }
     }
     
