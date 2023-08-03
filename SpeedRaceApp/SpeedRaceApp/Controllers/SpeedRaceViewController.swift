@@ -27,6 +27,17 @@ class SpeedRaceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let lSwipe = UISwipeGestureRecognizer()
+        lSwipe.direction = .left
+        lSwipe.addTarget(self, action: #selector(swipe))
+                
+        let rSwipe = UISwipeGestureRecognizer()
+        rSwipe.direction = .right
+        rSwipe.addTarget(self, action: #selector(swipe))
+                
+        view.addGestureRecognizer(lSwipe)
+        view.addGestureRecognizer(rSwipe)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -65,6 +76,38 @@ class SpeedRaceViewController: UIViewController {
         rockImage.frame = CGRect(x: rightOriginCoordinate, y: yCoordinateOfRock, width: elementSize, height: elementSize)
         
         view.addSubview(rockImage)
+    }
+    
+    @objc func swipe (sender: UISwipeGestureRecognizer) {
+        switch sender.direction {
+        case .left : swipeLeft()
+        case .right : swipeRight()
+        default: return
+        }
+    }
+    
+    func swipeLeft () {
+        if carImage.frame.origin.x == rightOriginCoordinate {
+            carImage.frame.origin.x = centerOriginCoordinate
+        }
+        else if carImage.frame.origin.x == centerOriginCoordinate {
+            carImage.frame.origin.x = leftOriginCoordinate
+        }
+        else {
+            return
+        }
+    }
+    
+    func swipeRight () {
+        if carImage.frame.origin.x == leftOriginCoordinate {
+            carImage.frame.origin.x = centerOriginCoordinate
+        }
+        else if carImage.frame.origin.x == centerOriginCoordinate {
+            carImage.frame.origin.x = rightOriginCoordinate
+        }
+        else {
+            return
+        }
     }
     
     @IBAction func changeCarPosition(_ sender: UISegmentedControl) {
