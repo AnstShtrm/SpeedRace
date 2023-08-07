@@ -11,10 +11,10 @@ class SettingsManager {
     public static var share = SettingsManager()
     private init () {}
     var settingsStrings: [TypesForSetting] = [
-        TypesForSetting(nameOfSetting: "Звук", switcher: true, type: .switchSetting),
-        TypesForSetting(nameOfSetting: "Тема", switcher: false, type: .switchSetting),
-        TypesForSetting(nameOfSetting: "Яркость", type: .openSetting),
-        TypesForSetting(nameOfSetting: "Сложность", type: .openSetting),
-        TypesForSetting(nameOfSetting: "Никнейм", type: .openSetting)
+        TypesForSetting(nameOfSetting: "Sound", switcher: true, type: .switchSetting),
+        TypesForSetting(nameOfSetting: "Color", switcher: false, type: .switchSetting),
+        TypesForSetting(nameOfSetting: "Language", type: .openSetting),
+        TypesForSetting(nameOfSetting: "Level", type: .openSetting),
+        TypesForSetting(nameOfSetting: "User Name", type: .openSetting)
     ]
 }

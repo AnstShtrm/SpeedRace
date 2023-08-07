@@ -36,7 +36,6 @@ class SettingViewController: UIViewController {
         items = settings
         TableView.reloadData()
     }
-    
 }
 extension SettingViewController: UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -57,17 +56,9 @@ extension SettingViewController: UITableViewDataSource,UITableViewDelegate{
             cell.switchForSetting.isOn = (items[index].switcher as? Bool) ?? false
             cell.delegate = self
             return cell
-            
-        
         }
-        
-        
     }
-    
-   
-        
-    }
-    
+}
 
 extension SettingViewController: SettingDelegate {
     func cell(_ cell: SwitchForSettingCell, changeValueTo isOn: Bool) {
@@ -75,7 +66,6 @@ extension SettingViewController: SettingDelegate {
         items[index].switcher = isOn
         cell.delegate = self
     }
-    
 }
 
 protocol SettingDelegate: AnyObject {
