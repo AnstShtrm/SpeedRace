@@ -20,6 +20,4 @@ class SwitchForSettingCell: UITableViewCell {
     }
 }
 
-protocol SettingDelegate: AnyObject {
-    func cell (_ cell: SwitchForSettingCell, changeValueTo isOn: Bool)
-}
+

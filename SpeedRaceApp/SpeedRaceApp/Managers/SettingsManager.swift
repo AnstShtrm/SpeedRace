@@ -14,5 +14,7 @@ class SettingsManager {
         TypesForSetting(nameOfSetting: "Звук", switcher: true, type: .switchSetting),
         TypesForSetting(nameOfSetting: "Тема", switcher: false, type: .switchSetting),
         TypesForSetting(nameOfSetting: "Яркость", type: .openSetting),
-        TypesForSetting(nameOfSetting: "Сложность", type: .openSetting)]
+        TypesForSetting(nameOfSetting: "Сложность", type: .openSetting),
+        TypesForSetting(nameOfSetting: "Никнейм", type: .openSetting)
+    ]
 }

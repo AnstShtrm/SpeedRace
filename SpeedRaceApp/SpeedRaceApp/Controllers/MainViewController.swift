@@ -7,13 +7,17 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+class MainViewController: UIViewController{
+    
     @IBAction func startSpeedRace(_ sender: Any) {
         let destinattion = SpeedRaceViewController ()
         navigationController?.pushViewController(destinattion, animated: true)
+        
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
 }
+
+
+

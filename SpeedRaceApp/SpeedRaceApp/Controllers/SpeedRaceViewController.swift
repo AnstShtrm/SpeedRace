@@ -9,6 +9,8 @@ import UIKit
 
 class SpeedRaceViewController: UIViewController {
     
+    @IBOutlet weak var carPositionSegmentControl: UISegmentedControl!
+    
     var carImage = UIImageView(image: UIImage(named: "car"))
     var treeImage = UIImageView(image: UIImage(named: "tree"))
     var ufoImage = UIImageView(image: UIImage(named: "UFO"))
@@ -59,7 +61,6 @@ class SpeedRaceViewController: UIViewController {
         let topSafeAreaPadding = UIApplication.shared.windows.first?.safeAreaInsets.top ?? 0
         let navigationBarHeight = navigationController?.navigationBar.frame.size.height ?? 0
         let yCoordinateOfCar = screenHeight - bottomSafeAreaPadding - defaultPadding - elementSize
-        
         
         carImage.frame = CGRect(x: centerOriginCoordinate, y: yCoordinateOfCar, width: elementSize, height: elementSize)
         
@@ -112,6 +113,20 @@ class SpeedRaceViewController: UIViewController {
             else {
                 return
             }
+        }
+    }
+    
+    @IBAction func changeCarPosition(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0: carImage.frame.origin.x = leftOriginCoordinate
+            treeImage.frame.origin.x = rightOriginCoordinate
+            rockImage.frame.origin.x = centerOriginCoordinate
+        case 2: carImage.frame.origin.x = rightOriginCoordinate
+            treeImage.frame.origin.x = centerOriginCoordinate
+            rockImage.frame.origin.x = leftOriginCoordinate
+        default: carImage.frame.origin.x = centerOriginCoordinate
+            treeImage.frame.origin.x = leftOriginCoordinate
+            rockImage.frame.origin.x = rightOriginCoordinate
         }
     }
 }

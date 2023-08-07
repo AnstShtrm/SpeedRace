@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		602C98582A7BDF6300AD8359 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 602C98572A7BDF6300AD8359 /* Lottie */; };
-		602C985A2A7BDFDA00AD8359 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602C98592A7BDFDA00AD8359 /* SideMenuViewController.swift */; };
-		602C98622A81296600AD8359 /* carAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 602C98612A81296600AD8359 /* carAnimation.json */; };
+		602C98642A81348E00AD8359 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602C98632A81348E00AD8359 /* SideMenuViewController.swift */; };
+		602C98682A81365F00AD8359 /* carAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 602C98672A81365F00AD8359 /* carAnimation.json */; };
 		607780612A716421001BF805 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6077805F2A716421001BF805 /* SettingTableViewCell.swift */; };
 		607780622A716421001BF805 /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607780602A716421001BF805 /* SettingTableViewCell.xib */; };
 		607780642A716886001BF805 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607780632A716886001BF805 /* SettingViewController.swift */; };
@@ -28,11 +27,12 @@
 		60D1358A2A6EA16B00F07501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60D135882A6EA16B00F07501 /* Main.storyboard */; };
 		60D1358C2A6EA16D00F07501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60D1358B2A6EA16D00F07501 /* Assets.xcassets */; };
 		60D1358F2A6EA16D00F07501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60D1358D2A6EA16D00F07501 /* LaunchScreen.storyboard */; };
+		7D375E822A8132DF00012966 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 7D375E812A8132DF00012966 /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		602C98592A7BDFDA00AD8359 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
-		602C98612A81296600AD8359 /* carAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carAnimation.json; sourceTree = "<group>"; };
+		602C98632A81348E00AD8359 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		602C98672A81365F00AD8359 /* carAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carAnimation.json; sourceTree = "<group>"; };
 		6077805F2A716421001BF805 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		607780602A716421001BF805 /* SettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
 		607780632A716886001BF805 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				602C98582A7BDF6300AD8359 /* Lottie in Frameworks */,
+				7D375E822A8132DF00012966 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,11 +71,11 @@
 			isa = PBXGroup;
 			children = (
 				60D135862A6EA16B00F07501 /* ViewController.swift */,
-				602C98592A7BDFDA00AD8359 /* SideMenuViewController.swift */,
 				607780752A7305B7001BF805 /* SpeedRaceViewController.swift */,
-				607780762A7305B7001BF805 /* SpeedRaceViewController.xib */,
 				607780632A716886001BF805 /* SettingViewController.swift */,
 				607780792A730681001BF805 /* MainViewController.swift */,
+				602C98632A81348E00AD8359 /* SideMenuViewController.swift */,
+				7D7FB3B42A7C51C3009A60A8 /* xibFiles */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -83,7 +83,7 @@
 		6077805C2A6EC6DD001BF805 /* Resurces */ = {
 			isa = PBXGroup;
 			children = (
-				602C98612A81296600AD8359 /* carAnimation.json */,
+				602C98672A81365F00AD8359 /* carAnimation.json */,
 				60D135822A6EA16B00F07501 /* AppDelegate.swift */,
 				60D135842A6EA16B00F07501 /* SceneDelegate.swift */,
 				60D135882A6EA16B00F07501 /* Main.storyboard */,
@@ -175,6 +175,14 @@
 			path = SpeedRaceApp;
 			sourceTree = "<group>";
 		};
+		7D7FB3B42A7C51C3009A60A8 /* xibFiles */ = {
+			isa = PBXGroup;
+			children = (
+				607780762A7305B7001BF805 /* SpeedRaceViewController.xib */,
+			);
+			path = xibFiles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,7 +200,7 @@
 			);
 			name = SpeedRaceApp;
 			packageProductDependencies = (
-				602C98572A7BDF6300AD8359 /* Lottie */,
+				7D375E812A8132DF00012966 /* Lottie */,
 			);
 			productName = SpeedRaceApp;
 			productReference = 60D1357F2A6EA16B00F07501 /* SpeedRaceApp.app */;
@@ -223,7 +231,7 @@
 			);
 			mainGroup = 60D135762A6EA16B00F07501;
 			packageReferences = (
-				602C98562A7BDF6300AD8359 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				7D375E802A8132DF00012966 /* XCRemoteSwiftPackageReference "lottie-spm" */,
 			);
 			productRefGroup = 60D135802A6EA16B00F07501 /* Products */;
 			projectDirPath = "";
@@ -246,7 +254,7 @@
 				60D1358A2A6EA16B00F07501 /* Main.storyboard in Resources */,
 				6077806B2A716B4D001BF805 /* SwitchForSettingCell.xib in Resources */,
 				607780742A71CA41001BF805 /* StatsCell.xib in Resources */,
-				602C98622A81296600AD8359 /* carAnimation.json in Resources */,
+				602C98682A81365F00AD8359 /* carAnimation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +269,7 @@
 				6077807A2A730681001BF805 /* MainViewController.swift in Sources */,
 				607780662A71693D001BF805 /* SettingsModel.swift in Sources */,
 				607780642A716886001BF805 /* SettingViewController.swift in Sources */,
-				602C985A2A7BDFDA00AD8359 /* SideMenuViewController.swift in Sources */,
+				602C98642A81348E00AD8359 /* SideMenuViewController.swift in Sources */,
 				607780772A7305B7001BF805 /* SpeedRaceViewController.swift in Sources */,
 				60D135872A6EA16B00F07501 /* ViewController.swift in Sources */,
 				6077806D2A71B4EA001BF805 /* SettingsManager.swift in Sources */,
@@ -488,9 +496,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		602C98562A7BDF6300AD8359 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+		7D375E802A8132DF00012966 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 4.0.0;
@@ -499,9 +507,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		602C98572A7BDF6300AD8359 /* Lottie */ = {
+		7D375E812A8132DF00012966 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 602C98562A7BDF6300AD8359 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			package = 7D375E802A8132DF00012966 /* XCRemoteSwiftPackageReference "lottie-spm" */;
 			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */

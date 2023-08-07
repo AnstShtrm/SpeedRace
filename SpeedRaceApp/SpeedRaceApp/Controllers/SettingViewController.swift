@@ -10,7 +10,7 @@ import UIKit
 class SettingViewController: UIViewController {
     
     @IBOutlet weak var TableView: UITableView!
-    let settings = SettingsManager.share.settingsStrings
+    var settings = SettingsManager.share.settingsStrings
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +20,12 @@ class SettingViewController: UIViewController {
         let cellForSetting = UINib(nibName: "SettingTableViewCell", bundle: Bundle.main)
         TableView.register(cellForSetting, forCellReuseIdentifier: "SettingTableViewCell")
         TableView.dataSource = self
+        
+        TableView.delegate = self
+        TableView.dataSource = self
     }
 }
-extension SettingViewController: UITableViewDataSource {
+extension SettingViewController: UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         settings.count
     }
@@ -41,5 +44,24 @@ extension SettingViewController: UITableViewDataSource {
             return cell
         }
     }
+    
+   
+        
+    }
+    
+
+extension SettingViewController: SettingDelegate {
+    func cell(_ cell: SwitchForSettingCell, changeValueTo isOn: Bool) {
+        guard let index = TableView.indexPath(for: cell)?.row else { return }
+        settings[index].switcher = isOn
+        cell.delegate = self
+    }
+    
 }
+
+protocol SettingDelegate: AnyObject {
+    func cell (_ cell: SwitchForSettingCell, changeValueTo isOn: Bool)
+}
+
+
 
