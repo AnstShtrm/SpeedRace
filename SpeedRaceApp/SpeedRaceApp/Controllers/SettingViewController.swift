@@ -11,6 +11,7 @@ class SettingViewController: UIViewController {
     
     @IBOutlet weak var TableView: UITableView!
     var settings = SettingsManager.share.settingsStrings
+    lazy var items:[TypesForSetting] = settings
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,25 +25,43 @@ class SettingViewController: UIViewController {
         TableView.delegate = self
         TableView.dataSource = self
     }
+    
+    @IBAction func saveChanges(_ sender: Any) {
+        settings = items
+        SettingsManager.share.settingsStrings = items
+        TableView.reloadData()
+    }
+    
+    @IBAction func cancelChanges(_ sender: Any) {
+        items = settings
+        TableView.reloadData()
+    }
+    
 }
 extension SettingViewController: UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        settings.count
+        items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let index = indexPath.row
-        if settings[index].type == .openSetting {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "SettingTableViewCell", for: indexPath) as? SettingTableViewCell else {return UITableViewCell()}
-            cell.nameOfSetting.text = settings[index].nameOfSetting
+        
+        switch items[index].type {
+        case.openSetting : guard let cell = tableView.dequeueReusableCell(withIdentifier: "SettingTableViewCell", for: indexPath) as? SettingTableViewCell else {return UITableViewCell()}
+            cell.nameOfSetting.text = items[index].nameOfSetting
+
             return cell
-        }
-        else {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SwitchForSettingCell", for: indexPath) as! SwitchForSettingCell
-            cell.nameForSettingSwitch.text = settings[index].nameOfSetting
-            cell.switchForSetting.isOn = (settings[index].switcher as? Bool) ?? false
+            
+        case.switchSetting: let cell = tableView.dequeueReusableCell(withIdentifier: "SwitchForSettingCell", for: indexPath) as! SwitchForSettingCell
+            cell.nameForSettingSwitch.text = items[index].nameOfSetting
+            cell.switchForSetting.isOn = (items[index].switcher as? Bool) ?? false
+            cell.delegate = self
             return cell
+            
+        
         }
+        
+        
     }
     
    
@@ -53,7 +72,7 @@ extension SettingViewController: UITableViewDataSource,UITableViewDelegate{
 extension SettingViewController: SettingDelegate {
     func cell(_ cell: SwitchForSettingCell, changeValueTo isOn: Bool) {
         guard let index = TableView.indexPath(for: cell)?.row else { return }
-        settings[index].switcher = isOn
+        items[index].switcher = isOn
         cell.delegate = self
     }
     

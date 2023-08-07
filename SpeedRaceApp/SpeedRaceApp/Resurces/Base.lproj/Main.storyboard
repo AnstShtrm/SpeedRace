@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ev0-dD-jIK">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -156,6 +156,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="23"/>
                                             <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="cancelChanges:" destination="XvN-i3-QGr" eventType="touchUpInside" id="EUI-bc-HlI"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="jYH-B9-9wA">
                                         <rect key="frame" x="212.66666666666663" y="16" width="164.33333333333337" height="42"/>
@@ -164,6 +167,9 @@
                                             <backgroundConfiguration key="background"/>
                                             <fontDescription key="titleFontDescription" type="system" pointSize="23"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="saveChanges:" destination="XvN-i3-QGr" eventType="touchUpInside" id="IaA-eg-o8j"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
